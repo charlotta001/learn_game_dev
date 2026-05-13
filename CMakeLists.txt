@@ -10,6 +10,7 @@ set(RAYLIB_LIB     "C:/raylib/raylib/src")
 
 add_executable(raylib_3d
     src/main.cpp
+    src/world.cpp
 )
 
 target_include_directories(raylib_3d PRIVATE ${RAYLIB_INCLUDE})
