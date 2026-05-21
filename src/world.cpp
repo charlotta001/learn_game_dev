@@ -8,17 +8,17 @@ World::World()
 
 void World::CameraPlayer()
 {
-    camera.position = (Vector3){0.0f, 50.0f, 50.0f};
-    camera.target = (Vector3){0.0f,0.0f,0.0f};
-    camera.up = (Vector3){0.0f,1.0f,0.0f};
+    camera.position = Vector3{0.0f, 50.0f, 50.0f};
+    camera.target = Vector3{0.0f,0.0f,0.0f};
+    camera.up = Vector3{0.0f,1.0f,0.0f};
     camera.fovy = 80.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 }
 
 void World::DrawObject()
 {
-    DrawCube((Vector3){0.0f,0.0f,0.0f}, 20.0f, 20.0f,20.0f,BLUE);
-    DrawCubeWires((Vector3){0.0f,0.0f,0.0f}, 20.0f, 20.0f,20.0f,WHITE);
+    DrawCube(Vector3{0.0f,0.0f,0.0f}, 20.0f, 20.0f,20.0f,BLUE);
+    DrawCubeWires(Vector3{0.0f,0.0f,0.0f}, 20.0f, 20.0f,20.0f,WHITE);
 }
 
 void World::CameraMovement()
